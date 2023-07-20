@@ -1,32 +1,22 @@
 {
-    "name": "Thingiverse ZIP Donwloader",
-    "version": "1.0.0",
-    "description": "Download ZIP for  Thingiverse model",
-    "manifest_version": 3,
-    "author": "Ramon Ramos",
-    "action": {
-        "default_popup": "index.html",
-        "default_title": "ZIP Downlaoder",
-        "default_icon" : "icon.png"
-    },
-    "content_scripts": [
-        {
-            "js": [
-                "index.html"
-            ],
-            "matches": [
-                "http://*/"
-            ]
-        }
-    ],
-    "permissions": [
-        "tabs",
-        "activeTab",
-        "<all_urls>",
-        "scripting"
-    ],
-    "background": {
-        "service_worker": "background.js"
-    },
-  "host_permissions": ["<all_urls>"]
+  "name": "Thinginverse ZIP Downloader",
+  "version": "0.01",
+  "manifest_version": 3,
+  "description": "Donwloads ZIP for Thingiverse",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "ZIP Downloader",
+    "default_icon" : "icon.png"
+},
+  "permissions": [
+    "scripting",
+    "tabs",
+    "activeTab",
+    "<all_urls>"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
 }
